@@ -10,7 +10,6 @@ import {
     GiInvertedDice6
 } from "react-icons/gi";
 
-
 export function PlayerIntro({
     rollDice, currentPlayer,
 }: {
