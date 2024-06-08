@@ -1,5 +1,12 @@
 import { Players, coincidePlayerError } from "../utils/utils";
 
+/**
+ * custom individual player and their positions based on the player's score
+ * @param player : player score
+ * @param windowSize : Responsive player size
+ * @param name ; curreent player
+ * @returns
+ */
 export function Player({
 	player,
 	name,

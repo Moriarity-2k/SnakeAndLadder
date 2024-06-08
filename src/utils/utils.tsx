@@ -1,3 +1,7 @@
+
+/**
+ * constant snake indices from the Image
+ */
 export const snakeIndices = [
 	{ from: 99, to: 41 },
 	{ from: 89, to: 53 },
@@ -9,6 +13,9 @@ export const snakeIndices = [
 	{ from: 27, to: 5 },
 ];
 
+/**
+ * constant ladder indices from the Image
+ */
 export const ladderIndices = [
 	{ from: 4, to: 25 },
 	{ from: 13, to: 46 },
@@ -26,10 +33,21 @@ export enum Players {
 	b,
 }
 
+/**
+ * Generates a random number between a and b
+ * @param a minimum number
+ * @param b maximum number
+ * @returns random number in range [a, b]
+ */
 export function RandomNumber(a: number, b: number) {
 	return Math.floor(Math.random() * (b - a + 1) + a);
 }
 
+/**
+ * Checks if the number hits either a snake or a ladder
+ * @param updatedNumber 
+ * @returns 
+ */
 export function checkForSnakesAndLadders(updatedNumber: number) {
 	for (const snake of snakeIndices) {
 		if (snake.from === updatedNumber) {
